@@ -1,0 +1,11 @@
+@import "variables";
+@import "header";
+@import "hero";
+
+html, body {
+    font-family: Avenir;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    color: $dark-color;
+}
