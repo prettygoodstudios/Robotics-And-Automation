@@ -1,0 +1,14 @@
+.section {
+    padding: 20px;
+    
+    &__title {
+        font-size: 2em;
+        font-weight: 200;
+        color: $primary-color;
+    }
+
+    &__content {
+        color: $dark-color;
+        line-height: 2;
+    }
+}
