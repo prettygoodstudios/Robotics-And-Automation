@@ -7,10 +7,12 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    height: 100px;
-    padding: 0 20px;
-    
-    
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: calc(100vw - 50px);
     &__title {
         color: $white;
         font-weight: 200;
@@ -20,6 +22,13 @@
     &__menu {
         width: 100vw;
         display: none;
+
+        flex-direction: column;
+
+        a {
+            color: white;
+            font-size: 1.3em;
+        }
     }
 
     &__toggle {

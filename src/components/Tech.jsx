@@ -36,7 +36,7 @@ const Tech = ({}) => {
         },
         {
             title: `Big Data`,
-            content: `Is the collection and processing of datasets that are two large or complicated to be processed by traditional tools such as Excel and business intelligence tools such as Tableau and Microsoft Power BI. Big data is described by five dimensions. These are volume, velocity, variety, veracity and value. If data does not satisfy these five dimensions it is not considered big data. Volume and velocity describe the size of the data-set. Oftentimes these two dimensions get overemphasized due to them being easily quantifiable. In contrast, the variety, veracity and value of the data are often times more important. These dimensions measure the quality of the data. Large amounts of low quality data will produce low quality insights. While small quantities of high quality data can produce insights with much higher value. A more simple way to think about this is garbage in garbage out. `,
+            content: `Is the collection and processing of datasets that are too large or complicated to be processed by traditional tools such as Excel and business intelligence tools such as Tableau and Microsoft Power BI. Big data is described by five dimensions. These are volume, velocity, variety, veracity and value. If data does not satisfy these five dimensions, it is not considered big data. Volume and velocity describe the size of the data-set. Oftentimes these two dimensions get overemphasized due to them being easily quantifiable. In contrast, the variety, veracity and value of the data are often times more important. These dimensions measure the quality of the data. Large amounts of low quality data will produce low quality insights. While small quantities of high-quality data can produce insights with much higher value. A more simple way to think about this is garbage in garbage out.`,
             img: `https://www.bigdataframework.org/wp-content/uploads/2019/11/2.jpg`
         },
         {
@@ -46,7 +46,7 @@ const Tech = ({}) => {
         },
         {
             title: `Cyber Physical Systems`,
-            content: `Cyber physical systems are systems composed of physical components such as workers, IIoT devices, Cobots and machines and virtual components such as cloud computing infrastructure, machine learning algorithms and enterprise information technology systems. Cyber physical systems enable increased collaboration and allow for the collection and processing of big data. In addition, cyber physical systems allow for algorithmic decision making and the streamlining of processes. Algorithmic decision making is the automation of making business decisions by using algorithms that are designed to optimize for certain outcomes. In addition, cyber physical systems can increase the accuracy of production forecasts as all workers, processes and machinery are monitored. This gives data analysts and algorithms access to large amounts of high quality data to make forecasts.`,
+            content: `Cyber physical systems are systems composed of physical components such as workers, IIoT devices, Cobots and machines and virtual components such as cloud computing infrastructure, machine learning algorithms and enterprise information technology systems. Cyber physical systems enable increased collaboration and allow for the collection and processing of big data. In addition, cyber physical systems allow for algorithmic decision making and the streamlining of processes. Algorithmic decision making is the automation of making business decisions by using algorithms that are designed to optimize for certain outcomes. In addition, cyber physical systems can increase the accuracy of production forecasts as all workers, processes and machinery are monitored. This gives data analysts and algorithms access to large amounts of high-quality data to make forecasts.`,
             img: `https://media.rs-online.com/image/upload/infographics/uk/industry40/img/Machine.gif`
         },
         {
@@ -57,7 +57,7 @@ const Tech = ({}) => {
     ]
 
     return (
-        <div className="section">
+        <div className="section" id="tech">
             <div className="section__title">What are some of the technologies that are enabling automation?</div>
             <div className="section__content">Hover on a card to learn more about that specific technology.</div>
             <div className="tech__cards">

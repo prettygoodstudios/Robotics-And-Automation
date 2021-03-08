@@ -25,14 +25,14 @@ const Uses = ({}) => {
             imgs: [
                 `https://content.fortune.com/wp-content/uploads/2018/01/rtsprcw.jpg`
             ],
-            content: `The Port of Long Beach Los Angeles has completely automated their docking facility. The automation project used IIoT devices and cyber physical systems to coordinate and control automated forklifts, trucks and cranes. Their implementation of automation has decreased turnaround times for trucks utilizing the port from 96 to 35 minutes. Turnaround time is the time it takes for a truck to enter and leave the facility. This has resulted in trucks spending less time idling. This is great for the truckers that utilize the port as they are paid by the load. Prior to the automation of the dock there was significant tension between the salaried union dock workers and the mostly immigrant truck drivers. The union dock workers were not incentivized to work efficiently as the union provided them great job security and they are paid salary. This misaligned the dockworkers incentives from the incentives of the port and its clients. Automation was able to solve this issue as the automated equipment is able to consistently operate twenty four hours seven days a week.`
+            content: `The Port of Long Beach Los Angeles has completely automated their docking facility. The automation project used IIoT devices and cyber physical systems to coordinate and control automated forklifts, trucks and cranes. Their implementation of automation has decreased turnaround times for trucks utilizing the port from 96 to 35 minutes. Turnaround time is the time it takes for a truck to enter and leave the facility. This has resulted in trucks spending less time idling. This is great for the truckers that utilize the port as they are paid by the load. Prior to the automation of the dock, there was significant tension between the salaried union dock workers and the mostly immigrant truck drivers. The union dock workers were not incentivized to work efficiently as the union provided them great job security and they are paid salary. This misaligned the dockworkers incentives from the incentives of the port and its clients. Automation was able to solve this issue as the automated equipment is able to consistently operate twenty-four hours seven days a week.`
         },
         {
             title: `Amazon Smart Warehouses`,
             imgs: [
                 
             ],
-            content: `Through Amazon’s acquisition of Kiva robotics Amazon has implemented robotic shelves in its warehouses. These shelves are able to bring items to pickers in its warehouses. This eliminates the non value adding task of walking to each item to put together an order. Prior to the implementation of the Kiva robots Amazon pick workers would spend 70% of their time working walking around the warehouse. That percentage is now 0%. The associates also enjoy the new work experience as it is less physically strenuous. The Kiva robots are connected to Amazon’s cloud computing platform Amazon Web Services (AWS). This allows Amazon to use sophisticated queuing algorithms to coordinate the movements of the robots. Amazon also uses big data techniques to forecast consumer demand and place the right amount of inventory in the right warehouses. These techniques allow Amazon to get away with less inventory in its warehouses. Amazon’s use of automation allows it to run a lean and mean machine. `
+            content: `Through Amazon’s acquisition of Kiva robotics Amazon has implemented robotic shelves in its warehouses. These shelves are able to bring items to pickers in its warehouses. This eliminates the non-value adding task of walking to each item to put together an order. Prior to the implementation of the Kiva robots Amazon pick workers would spend 70% of their time working walking around the warehouse. That percentage is now 0%. The associates also enjoy the new work experience as it is less physically strenuous. The Kiva robots are connected to Amazon’s cloud computing platform Amazon Web Services (AWS). This allows Amazon to use sophisticated queuing algorithms to coordinate the movements of the robots. Amazon also uses big data techniques to forecast consumer demand and place the right amount of inventory in the right warehouses. These techniques allow Amazon to get away with less inventory in its warehouses. Amazon’s use of automation allows it to run a lean and mean machine.`
         },
         {
             title: `Goldman Sachs Algorithmic Trading`,
@@ -43,7 +43,7 @@ const Uses = ({}) => {
         }
     ]
     return (
-        <div className="section">
+        <div className="section" id="uses">
             <div className="section__title">What are some real world use cases of these technologies?</div>
             <div className="uses__use">
                 {
