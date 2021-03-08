@@ -11,6 +11,14 @@
             border-radius: 20px;
             margin: 20px 0px;
 
+            @media only screen and (max-width: 900px) {
+                width: 70vw;
+                margin: 20px auto;
+                .tech__cards__card__title {
+                    font-size: 2em;
+                }
+            }
+
             &__title {
                 font-size: 5em;
                 position: absolute;

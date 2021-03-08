@@ -8,7 +8,7 @@ const Foundation = ({}) => {
         </div>
         <div className="foundation__essentials">
             <div className="foundation__essentials__title">Processes</div>
-            <img src="" className="foundation__essentials__img"/>
+            <img src="https://i.pinimg.com/originals/dd/d0/dd/ddd0dd43e41cba6c587bdee4bb5fccb2.png" className="foundation__essentials__img"/>
             <div className="foundation__essentials__content">
                 A process is a series of tasks that take a series of inputs and produce value added outputs. The inputs of a process can be anything from raw materials and information to human capital. Each step in a process should add value to the inputs. If this is not the case, then there are steps that management can take to optimize the process. The understanding of processes is absolutely essential to automation as automation is simply the act of using machinery to eliminate and reduce non-value adding steps of the process. 
             </div>

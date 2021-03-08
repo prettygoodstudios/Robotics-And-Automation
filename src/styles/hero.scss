@@ -18,6 +18,11 @@
         padding: 20px;
         border-radius: 20px;
         font-weight: 200;
+
+        @media only screen and (max-width: 700px) {
+            font-size: 1.5em;
+            width: calc(100vw - 80px);
+        }
     }
 
     &__scroll {
@@ -28,5 +33,6 @@
         padding: 20px;
         border-radius: 20px;
         background-color: $off-white;
+        text-align: center;
     }
 }

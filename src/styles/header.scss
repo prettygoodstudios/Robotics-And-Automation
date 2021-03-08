@@ -17,7 +17,17 @@
         color: $white;
         font-weight: 200;
         font-size: 3em;
+
+        @media only screen and (max-width: 700px) {
+            font-size: 1.5em;
+        }
+
+        @media only screen and (max-width: 400px) {
+            font-size: 1.2em;
+        }
     }
+
+    
 
     &__menu {
         width: 100vw;
@@ -28,6 +38,10 @@
         a {
             color: white;
             font-size: 1.3em;
+
+            &:hover {
+                cursor: pointer;
+            }
         }
     }
 
@@ -35,6 +49,22 @@
         width: 50px;
         height: 50px;
         position: relative;
+        @media only screen and (max-width: 700px) {
+            width: 25px;
+            height: 25px;
+
+            span {
+                width: 25px !important;
+            }
+    
+            span:nth-child(2) {
+                top: 12.5px !important;
+            }
+    
+            span:nth-child(3) {
+                top: 25px !important;
+            }
+        }
         span {
             position: absolute;
             background-color: $off-white;
