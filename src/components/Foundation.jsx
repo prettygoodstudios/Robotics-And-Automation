@@ -2,7 +2,7 @@ import React from "react";
 
 const Foundation = ({}) => {
     return <div className="section">
-        <div className="section__title">Foundational knowledge to understand automation in the supply chain</div>
+        <div className="section__title">Foundational knowledge needed to understand automation in the supply chain</div>
         <div className="section__content">
             The following are essential terms and concepts that are required to understand automation.
         </div>

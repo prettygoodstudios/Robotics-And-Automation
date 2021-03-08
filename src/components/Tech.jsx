@@ -1,7 +1,10 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 
 
-const Card = ({title, content, img, key}) => {
+const Card = ({title, content, img, key, modal, showModal}) => {
+
+
+
     return (
         <div className="tech__cards__card" key={key}>
             <div className="tech__cards__card__front">
@@ -15,10 +18,33 @@ const Card = ({title, content, img, key}) => {
             <div className="tech__cards__card__back">
                 <div className="tech__cards__card__content">
                     {content}
+                    <div>
+                    {
+                        modal != undefined && <button onClick={modal.toggle}>Learn More</button>
+                    }
+                    </div>
                 </div>
             </div>
+            {  modal && showModal && modal.modal }
         </div>
     )
+}
+
+const Modal = ({dismiss, show, title, children}) => {
+    return <div className="modal">
+        <div className="modal__title-bar">
+            <div className="modal__title-bar__title">
+                {title}
+            </div>
+            <div className="modal__title-bar__dismiss" onClick={dismiss}>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div className="modal__body">
+            {children}
+        </div>
+    </div>
 }
 
 const Tech = ({}) => {
@@ -41,7 +67,7 @@ const Tech = ({}) => {
         },
         {
             title: `Machine Learning`,
-            content: `Is a classification of algorithms that makes adjustments according to data. This allows these algorithms to adjust to trends and make judgement calls that were previously not possible by more traditional and rigid algorithms. Examples of applications of machine learning in the work space include algorithmic trading bots and computer vision defect detectors. Machine learning algorithms require large amounts of data to produce quality insights. Therefore, big data is necessary for the proper implementation of machine learning in the work space.`,
+            content: `Is a classification of algorithms that makes adjustments according to data. This allows these algorithms to adjust to trends and make judgement calls that were previously not possible by more traditional and rigid algorithms. Examples of applications of machine learning in the workplace include algorithmic trading bots and computer vision defect detectors. Machine learning algorithms require large amounts of data to produce quality insights. Therefore, big data is necessary for the proper implementation of machine learning in the workplace.`,
             img: `https://s27389.pcdn.co/wp-content/uploads/2020/10/how-kubernetes-extends-machine-learning-ml.jpeg`
         },
         {
@@ -52,9 +78,34 @@ const Tech = ({}) => {
         {
             title: `Cobots`,
             content: `Cobots are collaborative robots. These robots are designed to work alongside humans. This is in contrast to traditional industrial robots that work in fenced off areas. The collaboration of human workers and robots allows for synergies that were once not possible. Cobots work in what are called human robot collaboration (HRC) workspaces. These workspaces allow cobots to focus on tasks that they are good at such as fast and accurate movements and allow human workers to use their creativity and problem solving skills. HRC workspaces are the way of the future as it is not practical or possible to completely automate many processes due to the dexterity and problem solving required to complete certain tasks. Special considerations for both safety and ergonomics must be taken in HRC workspaces. These are serious concerns that are oftentimes extremely difficult to address. One way these concerns can be addressed is by designing cobots to be conforming. A conforming robot is a robot that has soft components and whose mechanical joints give to external forces. For example, if a conforming robot accidentally hits your arm the mechanical joints will give in much like the elbow in a human arm. The conforming nature of many cobots greatly improves their safety. Another solution to these concerns is  using machine learning algorithms to control portions of a cobots behavior. This allows the cobot to adapt to the unpredictable and dynamic actions of human workers. To conclude cobots enable automation in ways that were once not sought possible, but have significant challenges to successful implementation.`,
-            img: `https://www.ge.com/news/sites/default/files/Reports/2020-03/tumblr_inline_nihd6aB9bT1qzgziy.jpg`
+            img: `https://www.ge.com/news/sites/default/files/Reports/2020-03/tumblr_inline_nihd6aB9bT1qzgziy.jpg`,
+            showModal: false
         }
     ]
+
+    
+
+    const [cardState, setCards] = useState(cards);
+
+    const toggleModal = (id) => {
+        let copy = [...cardState];
+        copy[id].showModal = !copy[id].showModal;
+        console.log(copy)
+        setCards(copy);
+    }
+
+    const modals = {
+        5: {
+            modal: (
+                <Modal title="Cobots" dismiss={() => toggleModal(5)} show={true}>
+                    Cobots are collaborative robots. These robots are designed to work alongside humans. This is in contrast to traditional industrial robots that work in fenced off areas.
+                </Modal>
+            ),
+            toggle: () => {
+                toggleModal(5);
+            }
+        }
+    }
 
     return (
         <div className="section" id="tech">
@@ -62,7 +113,7 @@ const Tech = ({}) => {
             <div className="section__content">Hover on a card to learn more about that specific technology.</div>
             <div className="tech__cards">
                 {
-                    cards.map((c, i) => Card({...c, key: i}) )
+                    cardState.map((c, i) => Card({...c, modal: modals[i]}) )
                 }
             </div>
         </div>
