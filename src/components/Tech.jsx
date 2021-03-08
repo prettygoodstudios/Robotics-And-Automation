@@ -66,7 +66,7 @@ const Tech = ({}) => {
         },
         {
             title: `Big Data`,
-            content: `Is the collection and processing of datasets that are too large or complicated to be processed by traditional tools such as Excel and business intelligence tools such as Tableau and Microsoft Power BI. Big data is described by five dimensions. These are volume, velocity, variety, veracity and value. If data does not satisfy these five dimensions, it is not considered big data. Volume and velocity describe the size of the data-set. Oftentimes these two dimensions get overemphasized due to them being easily quantifiable. In contrast, the variety, veracity and value of the data are often times more important. These dimensions measure the quality of the data. Large amounts of low quality data will produce low quality insights. While small quantities of high-quality data can produce insights with much higher value. A more simple way to think about this is garbage in garbage out.`,
+            content: `Is the collection and processing of datasets that are too large or complicated to be processed by traditional tools such as Excel and business intelligence tools such as Tableau and Microsoft Power BI. Big data is described by five dimensions. These are volume, velocity, variety, veracity and value. If data does not sufficiently satisfy these five dimensions, it is not considered big data. If you would like to learn about these dimensions, click on the button below.`,
             img: `https://www.bigdataframework.org/wp-content/uploads/2019/11/2.jpg`
         },
         {
@@ -76,12 +76,12 @@ const Tech = ({}) => {
         },
         {
             title: `Cyber Physical Systems`,
-            content: `Cyber physical systems are systems composed of physical components such as workers, IIoT devices, Cobots and machines and virtual components such as cloud computing infrastructure, machine learning algorithms and enterprise information technology systems. Cyber physical systems enable increased collaboration and allow for the collection and processing of big data. In addition, cyber physical systems allow for algorithmic decision making and the streamlining of processes. Algorithmic decision making is the automation of making business decisions by using algorithms that are designed to optimize for certain outcomes. In addition, cyber physical systems can increase the accuracy of production forecasts as all workers, processes and machinery are monitored. This gives data analysts and algorithms access to large amounts of high-quality data to make forecasts.`,
+            content: `Cyber physical systems are systems composed of physical components such as workers, IIoT devices, cobots and machines and virtual components such as cloud computing infrastructure, machine learning algorithms and information technology systems.`,
             img: `https://media.rs-online.com/image/upload/infographics/uk/industry40/img/Machine.gif`
         },
         {
             title: `Cobots`,
-            content: `Cobots are collaborative robots. These robots are designed to work alongside humans. This is in contrast to traditional industrial robots that work in fenced off areas. The collaboration of human workers and robots allows for synergies that were once not possible. Cobots work in what are called human robot collaboration (HRC) workspaces. These workspaces allow cobots to focus on tasks that they are good at such as fast and accurate movements and allow human workers to use their creativity and problem solving skills. HRC workspaces are the way of the future as it is not practical or possible to completely automate many processes due to the dexterity and problem solving required to complete certain tasks. Special considerations for both safety and ergonomics must be taken in HRC workspaces. These are serious concerns that are oftentimes extremely difficult to address. One way these concerns can be addressed is by designing cobots to be conforming. A conforming robot is a robot that has soft components and whose mechanical joints give to external forces. For example, if a conforming robot accidentally hits your arm the mechanical joints will give in much like the elbow in a human arm. The conforming nature of many cobots greatly improves their safety. Another solution to these concerns is  using machine learning algorithms to control portions of a cobots behavior. This allows the cobot to adapt to the unpredictable and dynamic actions of human workers. To conclude cobots enable automation in ways that were once not sought possible, but have significant challenges to successful implementation.`,
+            content: `Cobots are collaborative robots. These robots are designed to work alongside humans. This is in contrast to traditional industrial robots that work in fenced off areas. The collaboration of human workers and robots allows for synergies that were once not possible.`,
             img: `https://www.ge.com/news/sites/default/files/Reports/2020-03/tumblr_inline_nihd6aB9bT1qzgziy.jpg`,
             showModal: false
         }
@@ -102,13 +102,45 @@ const Tech = ({}) => {
         5: {
             modal: (
                 <Modal title="Cobots" dismiss={() => toggleModal(5)} show={true}>
-                    Cobots are collaborative robots. These robots are designed to work alongside humans. This is in contrast to traditional industrial robots that work in fenced off areas.
+                    <p>Cobots work in what are called human robot collaboration (HRC) workspaces. These workspaces allow cobots to focus on tasks that they are good at such as fast and accurate movements and allow human workers to use their creativity and problem solving skills. HRC workspaces are the way of the future as it is not practical or possible to completely automate many processes due to the dexterity and problem solving required to complete certain tasks.</p>
+                    <div className="img-well">
+                        <img src="https://www.the-possible.com/wp-content/uploads/2017/08/1360x1632.jpg"/>
+                        <img src="https://www.pngitem.com/pimgs/m/13-131741_friendly-robot-cartoon-hd-png-download.png"/>
+                    </div>
+                    <p>Special considerations for both safety and ergonomics must be taken in HRC workspaces. These are serious concerns that are oftentimes extremely difficult to address. One way these concerns can be addressed is by designing cobots to be conforming. A conforming robot is a robot that has soft components and whose mechanical joints give to external forces. For example, if a conforming robot accidentally hits your arm the mechanical joints will give in much like the elbow in a human arm. The conforming nature of many cobots greatly improves their safety. Another solution to these concerns is  using machine learning algorithms to control portions of a cobots behavior. This allows the cobot to adapt to the unpredictable and dynamic actions of human workers. To conclude cobots enable automation in ways that were once not thought possible, but have significant challenges to successful implementation.</p>
                 </Modal>
             ),
             toggle: () => {
                 toggleModal(5);
             }
-        }
+        },
+        2: {
+            modal: (
+                <Modal title="Big Data" dismiss={() => toggleModal(2)} show={true}>
+                    <div className="img-well">
+                        <img src="https://www.edureka.co/blog/wp-content/uploads/2018/06/Five-Vs-of-Big-Data-What-is-Big-Data-Edureka.png"/>
+                    </div>
+                    <p>Volume and velocity describe the size of the data-set. Volume is the shear size of the data-set, while velocity is the rate at which new data is being collected. Oftentimes these two dimensions get overemphasized due to them being easily quantifiable.</p>
+                    <div className="img-well">
+                        <img src="https://www.wearetheliving.com/wp-content/uploads/2019/02/garbage-data-acting-man.com_.gif"/>
+                    </div>
+                    <p>In contrast, the variety, veracity and value of the data are often times more important. These dimensions measure the quality of the data. Large amounts of low quality data will produce low quality insights. While small quantities of high-quality data can produce insights with much higher value. A more simple way to think about this is garbage in garbage out.</p>
+                </Modal>
+            ),
+            toggle: () => {
+                toggleModal(2);
+            }
+        },
+        4: {
+            modal: (
+                <Modal title="Cyber Physical Systems" dismiss={() => toggleModal(4)} show={true}>
+                    <p>Cyber physical systems enable increased collaboration and allow for the collection and processing of big data. In addition, cyber physical systems allow for algorithmic decision making and the streamlining of processes. Algorithmic decision making is the automation of making business decisions by using algorithms that are designed to optimize for certain outcomes. Cyber physical systems can also increase the accuracy of production forecasts as all workers, processes and machinery are monitored. This gives data analysts and algorithms access to large amounts of high-quality data to make forecasts.</p>
+                </Modal>
+            ),
+            toggle: () => {
+                toggleModal(4);
+            }
+        },
     }
 
     return (

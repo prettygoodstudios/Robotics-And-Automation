@@ -1,4 +1,5 @@
 import React from "react";
+import Conclude from "./Conclude";
 import Foundation from "./Foundation";
 import Header from "./Header";
 import Hero from "./Hero";
@@ -19,6 +20,7 @@ const App = () => {
         <Uses/>
         <Industry/>
         <Jobs/>
+        <Conclude/>
     </div>
 }
 

@@ -64,3 +64,15 @@
         background-color: rgba(0,0,0,0.5);
     }
 }
+
+.img-well {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    width: 100%;
+
+    img {
+        max-height: 300px;
+    }
+}
