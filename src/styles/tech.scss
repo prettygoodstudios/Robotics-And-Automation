@@ -36,14 +36,23 @@
                 width: 100%;
                 height: 100%;
             }
+            &__mask {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color:#000;
+                opacity: 0.4;
+            }
             &__back {
                 display: none;
                 background-color: $dark-color;
                 width: 100%;
                 height: 100%;
+                overflow-y: scroll;
             }
 
             &:hover {
+                cursor: pointer;
                 .tech__cards__card__front {
                     display: none;
                 }
