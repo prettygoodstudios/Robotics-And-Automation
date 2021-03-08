@@ -31,20 +31,24 @@ const Card = ({title, content, img, key, modal, showModal}) => {
 }
 
 const Modal = ({dismiss, show, title, children}) => {
-    return <div className="modal">
-        <div className="modal__title-bar">
-            <div className="modal__title-bar__title">
-                {title}
+    return (
+    <div className="modal__mask">
+        <div className="modal">
+            <div className="modal__title-bar">
+                <div className="modal__title-bar__title">
+                    {title}
+                </div>
+                <div className="modal__title-bar__dismiss" onClick={dismiss}>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
-            <div className="modal__title-bar__dismiss" onClick={dismiss}>
-                <span></span>
-                <span></span>
+            <div className="modal__body">
+                {children}
             </div>
-        </div>
-        <div className="modal__body">
-            {children}
         </div>
     </div>
+    )
 }
 
 const Tech = ({}) => {

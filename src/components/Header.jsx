@@ -14,7 +14,7 @@ const Header = ({}) => {
 
     return <div className="header">
         <div className="header__title">Robotics &amp; Automation</div>
-        <div className="header__toggle" onClick={() => setShow(!show)}>
+        <div className={"header__toggle" + (!show ? "" : " header__close")} onClick={() => setShow(!show)}>
             <span></span>
             <span></span>
             <span></span>
