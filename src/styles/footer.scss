@@ -1,0 +1,26 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $primary-color;
+    color: $white;
+    padding: 20px;
+    flex-wrap: wrap;
+    &__left {
+        &__title {
+            font-size: 2em;
+        }
+
+        div {
+            margin: 20px 0px;
+        }
+    }
+
+    &__right {
+        a {
+            color: $white;
+            text-decoration: none;
+        }
+    }
+}

@@ -1,10 +1,10 @@
 import React from "react";
 
-const Use = ({title, imgs, content}) => {
+const Use = ({title, imgs, content, imgTitle}) => {
     return (
         <div className="uses__use">
             <div className="uses__use__title">{title}</div>
-            <div className="users__use__imgs">
+            <div className="uses__use__imgs">
                 {
                     imgs.map((img, i) => {
                         return (
@@ -13,6 +13,10 @@ const Use = ({title, imgs, content}) => {
                     })
                 }
             </div>
+            {
+                imgTitle && 
+                <div className="uses__use__img-title">{imgTitle}</div>
+            }
             <div className="uses__use__content">{content}</div>
         </div>
     )
@@ -29,8 +33,10 @@ const Uses = ({}) => {
         },
         {
             title: `Amazon Smart Warehouses`,
+            imgTitle: `Time spent before and after automation walking.`,
             imgs: [
-                
+                `https://staticgeofocus.s3-us-west-2.amazonaws.com/seventy.png`,
+                `https://staticgeofocus.s3-us-west-2.amazonaws.com/zeropercent.png`
             ],
             content: `Through Amazon’s acquisition of Kiva robotics Amazon has implemented robotic shelves in its warehouses. These shelves are able to bring items to pickers in its warehouses. This eliminates the non-value adding task of walking to each item to put together an order. Prior to the implementation of the Kiva robots Amazon pick workers would spend 70% of their time working walking around the warehouse. That percentage is now 0%. The associates also enjoy the new work experience as it is less physically strenuous. The Kiva robots are connected to Amazon’s cloud computing platform Amazon Web Services (AWS). This allows Amazon to use sophisticated queuing algorithms to coordinate the movements of the robots. Amazon also uses big data techniques to forecast consumer demand and place the right amount of inventory in the right warehouses. These techniques allow Amazon to get away with less inventory in its warehouses. Amazon’s use of automation allows it to run a lean and mean machine.`
         },
@@ -44,7 +50,7 @@ const Uses = ({}) => {
     ]
     return (
         <div className="section" id="uses">
-            <div className="section__title">What are some real world use cases of these technologies?</div>
+            <div className="section__title">What are some real-world use cases of these technologies?</div>
             <div className="uses__use">
                 {
                     data.map(d => Use(d))

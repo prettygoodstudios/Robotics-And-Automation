@@ -56,12 +56,12 @@ const Tech = ({}) => {
     const cards = [
         {
             title: `IIoT`,
-            content: `Industrial internet of things devices are devices that are connected to the internet and facilitate the remote monitoring and control of business processes. IIoT devices can range from robotic shelves in Amazon distribution centers to computer vision powered defect detectors on assembly lines. `,
+            content: `Industrial internet of things devices are devices that are connected to the internet and facilitate the remote monitoring and control of business processes. IIoT devices can range from robotic shelves in Amazon distribution centers to computer vision powered defect detectors on assembly lines.`,
             img: `https://specials-images.forbesimg.com/imageserve/5fac01cee9769955286a8551/960x0.jpg?fit=scale`
         },
         {
             title: `Cloud Computing`,
-            content: `Cloud computing is a term used to describe computing systems that can be remotely accessed from a variety of locations. Examples of cloud computing that most everyday consumers are aware of are Google Drive, Spotify and Netflix. In business settings cloud computing facilitates the collection and processing of big data. This helps businesses gain key insights from their customers and forecast demand. In addition, it allows businesses to aggregate the data from their IIoT devices and deploy algorithms that control their IIoT devices and businesses processes in a coordinated and optimal manner. `,
+            content: `Cloud computing is a term used to describe computing systems that can be remotely accessed from a variety of locations. Examples of cloud computing that most everyday consumers are aware of are Google Drive, Spotify and Netflix. In business settings cloud computing facilitates the collection and processing of big data. This helps businesses gain key insights from their customers and forecast demand. In addition, it allows businesses to aggregate the data from their IIoT devices and deploy algorithms that control their IIoT devices and businesses processes in a coordinated and optimal manner.`,
             img: `https://dcode.co/wp-content/uploads/2019/03/cloud-computing-and-cloud-technology.jpg`
         },
         {
@@ -102,12 +102,12 @@ const Tech = ({}) => {
         5: {
             modal: (
                 <Modal title="Cobots" dismiss={() => toggleModal(5)} show={true}>
-                    <p>Cobots work in what are called human robot collaboration (HRC) workspaces. These workspaces allow cobots to focus on tasks that they are good at such as fast and accurate movements and allow human workers to use their creativity and problem solving skills. HRC workspaces are the way of the future as it is not practical or possible to completely automate many processes due to the dexterity and problem solving required to complete certain tasks.</p>
+                    <p>Cobots work in what are called human robot collaboration (HRC) workplaces. These workplaces allow cobots to focus on tasks that they are good at such as fast and accurate movements and allow human workers to use their creativity and problem-solving skills. HRC workplaces are the way of the future as it is not practical or possible to completely automate many processes due to the dexterity and problem solving required to complete certain tasks.</p>
                     <div className="img-well">
                         <img src="https://www.the-possible.com/wp-content/uploads/2017/08/1360x1632.jpg"/>
                         <img src="https://www.pngitem.com/pimgs/m/13-131741_friendly-robot-cartoon-hd-png-download.png"/>
                     </div>
-                    <p>Special considerations for both safety and ergonomics must be taken in HRC workspaces. These are serious concerns that are oftentimes extremely difficult to address. One way these concerns can be addressed is by designing cobots to be conforming. A conforming robot is a robot that has soft components and whose mechanical joints give to external forces. For example, if a conforming robot accidentally hits your arm the mechanical joints will give in much like the elbow in a human arm. The conforming nature of many cobots greatly improves their safety. Another solution to these concerns is  using machine learning algorithms to control portions of a cobots behavior. This allows the cobot to adapt to the unpredictable and dynamic actions of human workers. To conclude cobots enable automation in ways that were once not thought possible, but have significant challenges to successful implementation.</p>
+                    <p>Special considerations for both safety and ergonomics must be taken in HRC workplaces. These are serious concerns that are oftentimes extremely difficult to address. One way these concerns can be addressed is by designing cobots to be conforming. A conforming robot is a robot that has soft components and whose mechanical joints give to external forces. For example, if a conforming robot accidentally hits your arm the mechanical joints will give in much like the elbow in a human arm. The conforming nature of many cobots greatly improves their safety. Another solution to these concerns is using machine learning algorithms to control portions of a cobots behavior. This allows the cobot to adapt to the unpredictable and dynamic actions of human workers. To conclude cobots enable automation in ways that were once not thought possible but have significant challenges to successful implementation.</p>
                 </Modal>
             ),
             toggle: () => {
@@ -120,11 +120,11 @@ const Tech = ({}) => {
                     <div className="img-well">
                         <img src="https://www.edureka.co/blog/wp-content/uploads/2018/06/Five-Vs-of-Big-Data-What-is-Big-Data-Edureka.png"/>
                     </div>
-                    <p>Volume and velocity describe the size of the data-set. Volume is the shear size of the data-set, while velocity is the rate at which new data is being collected. Oftentimes these two dimensions get overemphasized due to them being easily quantifiable.</p>
+                    <p>Volume and velocity describe the size of the dataset. Volume is the sheer size of the dataset, while velocity is the rate at which new data is being collected. Oftentimes these two dimensions get overemphasized due to them being easily quantifiable.</p>
                     <div className="img-well">
                         <img src="https://www.wearetheliving.com/wp-content/uploads/2019/02/garbage-data-acting-man.com_.gif"/>
                     </div>
-                    <p>In contrast, the variety, veracity and value of the data are often times more important. These dimensions measure the quality of the data. Large amounts of low quality data will produce low quality insights. While small quantities of high-quality data can produce insights with much higher value. A more simple way to think about this is garbage in garbage out.</p>
+                    <p>In contrast, the variety, veracity and value of the data are often times more important. These dimensions measure the quality of the data. Large amounts of low-quality data will produce low quality insights. While small quantities of high-quality data can produce insights with much higher value. A simpler way to think about this is garbage in garbage out.</p>
                 </Modal>
             ),
             toggle: () => {

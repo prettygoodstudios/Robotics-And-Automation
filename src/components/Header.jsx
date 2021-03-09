@@ -20,7 +20,7 @@ const Header = ({}) => {
             <span></span>
         </div>
         <div className="header__menu" style={show ? {display: "flex"} : {}}>
-            <a onClick={() => route("intro")}>Intro</a>
+            <a onClick={() => route("intro")}>Introduction</a>
             <a onClick={() => route("tech")}>Technologies</a>
             <a onClick={() => route("uses")}>Uses</a>
         </div>
